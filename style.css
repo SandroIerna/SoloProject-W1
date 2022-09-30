@@ -1,7 +1,12 @@
 body {
   margin: 0;
-  background-color: #5a716a;
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 62, 91, 1) 0%,
+    rgba(99, 116, 111, 1) 45%,
+    rgba(83, 166, 182, 1) 100%
+  );
+  font-family: "Courier New", Courier, monospace;
 }
 
 #body-container {
