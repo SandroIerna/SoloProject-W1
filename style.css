@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  background-color: #5a716a;
+  font-family: "Montserrat" Arial, Helvetica, sans-serif;
+}
+
+#body-container {
+  position: relative;
+  height: 300px;
+  top: 25vh;
+}
+
+#profile-img-container {
+  width: 200px;
+  height: 300px;
+  border-radius: 250px;
+  /* background-color: black; */
+  position: absolute;
+  margin-left: 60%;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+#profile-img-container:hover {
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.55);
+  transition: 0.5s;
+}
+
+#profile-img {
+  object-fit: cover;
+}
+
+.list {
+  text-align: center;
+  height: 90px;
+  width: 50%;
+  position: absolute;
+  background-color: #d0d6b5;
+  border-radius: 25px;
+}
+
+#education {
+}
+
+#work-experience {
+  top: 33%;
+}
+
+#about-me {
+  top: 66%;
+}
