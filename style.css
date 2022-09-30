@@ -43,18 +43,17 @@ body {
   position: absolute;
   background-color: #d0d6b5;
   white-space: nowrap;
-  overflow: hidden;
   border-radius: 20px;
 }
 
 .list-more {
   text-align: center;
   height: 90px;
-  right: 10%;
-  left: 10%;
+  width: 100%;
   position: absolute;
   background-color: #d0d6b5;
   border-radius: 25px;
+  opacity: 0.8;
 }
 
 #education {
@@ -65,6 +64,7 @@ body {
 #more-education {
   top: 0;
   transform: translateY(350px);
+  transition: 0.3s;
 }
 
 #education:hover {
@@ -90,6 +90,10 @@ body {
   cursor: pointer;
 }
 
+#work-experience:hover #more-work-experience {
+  transform: translateY(0px);
+}
+
 #about-me {
   bottom: 0;
 }
@@ -104,6 +108,11 @@ body {
   transition: 0.5s;
   cursor: pointer;
 }
+
+#about-me:hover #more-about-me {
+  transform: translateY(0px);
+}
+
 #info-container {
   position: absolute;
   top: 0;
@@ -128,7 +137,7 @@ body {
   font-weight: bold;
   left: 25%;
   transform: translateX(150px);
-  transition: transform 0.3s;
+  transition: 0.3s;
 }
 
 #profile-img-container:hover #gitHub {
