@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #5a716a;
-  font-family: "Montserrat" Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #body-container {
@@ -14,15 +14,19 @@ body {
   width: 200px;
   height: 300px;
   border-radius: 250px;
-  /* background-color: black; */
+  background-color: black;
   position: absolute;
-  margin-left: 60%;
-  margin-right: auto;
+  left: 60%;
+  top: 0;
+  right: 0;
+  bottom: 0;
   overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 #profile-img-container:hover {
-  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 60px rgba(242, 215, 238, 0.55);
   transition: 0.5s;
 }
 
@@ -33,19 +37,82 @@ body {
 .list {
   text-align: center;
   height: 90px;
-  width: 50%;
+  right: 10%;
+  left: 10%;
+  position: absolute;
+}
+
+.list-more {
+  text-align: center;
+  height: 90px;
+  right: 10%;
+  left: 10%;
   position: absolute;
   background-color: #d0d6b5;
   border-radius: 25px;
 }
 
 #education {
+  top: 0%;
+  background-color: #d0d6b5;
+}
+
+#more-education {
+  top: 0%;
+  transform: translateY(350px);
 }
 
 #work-experience {
   top: 33%;
+  background-color: #d0d6b5;
+}
+#more-work-experience {
+  top: 33%;
+  transform: translateY(250px);
 }
 
 #about-me {
   top: 66%;
+  background-color: #d0d6b5;
+}
+
+#more-about-me {
+  top: 66%;
+  transform: translateY(150px);
+}
+
+#info-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 40%;
+  overflow: hidden;
+}
+
+#gitHub {
+  position: absolute;
+  display: table;
+  height: 20px;
+  width: 100px;
+  background-color: #301014;
+  bottom: 10%;
+  opacity: 0.8;
+  border-radius: 45px;
+  font-size: 0.5em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  left: 25%;
+  transform: translateX(150px);
+  transition: transform 0.3s;
+}
+
+#profile-img-container:hover #gitHub {
+  transform: translateX(0px);
+}
+
+#check-gitHub {
+  display: table-cell;
+  vertical-align: middle;
 }
