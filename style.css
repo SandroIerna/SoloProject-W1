@@ -1,155 +1,98 @@
 body {
   margin: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(6, 62, 91, 1) 0%,
-    rgba(99, 116, 111, 1) 45%,
-    rgba(83, 166, 182, 1) 100%
-  );
-  font-family: "Courier New", Courier, monospace;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-#body-container {
-  position: relative;
-  height: 300px;
-  top: 25vh;
-}
-
-#profile-img-container {
-  width: 200px;
-  height: 300px;
-  border: black 3px solid;
-  border-radius: 250px;
+.sidebar {
+  position: fixed;
+  /* background: rgb(250, 250, 210); */
+  /* background: linear-gradient(
+    270deg,
+    rgba(250, 250, 210, 1) 0%,
+    rgba(215, 176, 135, 1) 65%,
+    rgba(230, 197, 197, 1) 100%
+  ); */
+  left: 0;
+  width: 10%;
+  bottom: 20vh;
+  top: 20vh;
+  height: auto;
   background-color: black;
-  position: absolute;
-  left: 60%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  transition: 0.5s;
-  cursor: pointer;
+  border: double 2px;
 }
-
-#profile-img-container:hover {
-  box-shadow: 0px 0px 60px rgba(242, 215, 238, 0.55);
-  transition: 0.5s;
+.main-container {
+  /* background: rgb(250, 250, 210); */
+  /* background: linear-gradient(
+    90deg,
+    rgba(250, 250, 210, 1) 0%,
+    rgba(215, 176, 135, 1) 65%,
+    rgba(230, 197, 197, 1) 100%
+  ); */
+  height: 100vh;
 }
 
 #profile-img {
-  object-fit: cover;
-}
-
-.list {
-  text-align: center;
-  height: 1em;
-  width: 200px;
-  margin-left: 30%;
-  position: absolute;
-  background-color: #d0d6b5;
-  white-space: nowrap;
-  border-radius: 20px;
-}
-
-.list-more {
-  text-align: center;
-  height: 90px;
-  width: 100%;
-  position: absolute;
-  background-color: #d0d6b5;
-  border-radius: 25px;
-  opacity: 0.8;
-}
-
-#education {
-  top: 0;
-  cursor: pointer;
-}
-
-#more-education {
-  top: 0;
-  transform: translateY(350px);
-  transition: 0.3s;
-}
-
-#education:hover {
-  box-shadow: 0px 0px 170px 30px rgba(242, 215, 238, 0.55);
-  transition: 0.5s;
-}
-#education:hover #more-education {
-  transform: translateY(0px);
-}
-
-#work-experience {
-  top: 50%;
-}
-
-#more-work-experience {
-  top: 33%;
-  transform: translateY(250px);
-}
-
-#work-experience:hover {
-  box-shadow: 0px 0px 170px 30px rgba(242, 215, 238, 0.55);
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-#work-experience:hover #more-work-experience {
-  transform: translateY(0px);
-}
-
-#about-me {
-  bottom: 0;
-}
-
-#more-about-me {
-  top: 66%;
-  transform: translateY(150px);
-}
-
-#about-me:hover {
-  box-shadow: 0px 0px 170px 30px rgba(242, 215, 238, 0.55);
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-#about-me:hover #more-about-me {
-  transform: translateY(0px);
-}
-
-#info-container {
-  position: absolute;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background-color: #fff;
   top: 0;
   bottom: 0;
+  right: 0;
   left: 0;
-  right: 40%;
   overflow: hidden;
+  transition: 0.2s;
 }
 
-#gitHub {
+#social {
   position: absolute;
-  display: table;
-  height: 20px;
-  width: 100px;
-  background-color: #301014;
-  bottom: 10%;
-  opacity: 0.8;
-  border-radius: 45px;
-  font-size: 0.5em;
+  top: 15vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 80%;
+  background-color: aquamarine;
+}
+
+.social {
+  margin: auto;
+  margin-top: 20%;
+  background-color: black;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+}
+.social:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.name {
+  position: fixed;
+  top: 0;
+  bottom: 80vh;
+  width: 20%;
+  background-color: black;
+}
+#name {
+  position: absolute;
+  transform: translate(50%, -50%);
+  top: 50%;
+  right: 50%;
   text-align: center;
-  color: white;
-  font-weight: bold;
-  left: 25%;
-  transform: translateX(150px);
-  transition: 0.3s;
+  color: #fff;
 }
 
-#profile-img-container:hover #gitHub {
-  transform: translateX(0px);
+#profile-img:hover {
+  transform: scale(1.1, 1.1);
 }
 
-#check-gitHub {
-  display: table-cell;
-  vertical-align: middle;
+.page-number {
+  position: fixed;
+  bottom: 0;
+  top: 80vh;
+  width: 20%;
+  background-color: black;
 }
